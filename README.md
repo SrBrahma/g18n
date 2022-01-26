@@ -54,6 +54,7 @@ export function Component(): JSX.Element {
   if (!logged)
     return <Text>{T.loginRequired}</Text>
   else
+    // TS typesafe argument
     return <Text>{T._license.paused('January 25, 2022')}</Text>
 }
 ```
